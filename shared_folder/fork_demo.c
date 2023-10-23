@@ -1,3 +1,10 @@
+/*The fork() system call creates a new process by duplicating the calling process. The new process, known as the child process, 
+is an exact copy of the calling process, known as the parent process. After the fork, both processes continue to execute from 
+the instruction following the fork() system call. The execl() system call replaces the current process image with a new
+process image specified by the path name. In this code, execl() is used to execute the ls command in Linux 
+*/
+
+
 #include <stdio.h> 
 #include <sys/types.h> //libraries for fork (getpid) also wait
 #include <unistd.h> //fork as
